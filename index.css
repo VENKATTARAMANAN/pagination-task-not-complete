@@ -1,0 +1,55 @@
+table, th, td {
+    border:1px solid black;
+    text-align:left;
+  }
+  th{
+      background-color: grey;
+  }
+  .container{
+     margin:50px;
+  }
+  .pagination{
+display:flex;
+align-items: flex-end;
+justify-content: center;
+  }
+
+  .pagination-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute;
+    bottom: 22px;
+    width: 100%; */
+    
+}
+.pagination{
+    width: 500px;
+    border-radius: 35px;
+    /* box-shadow: 0 0 20px 5px rgb(3, 3, 43); */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: rgb(15, 64, 109);
+    padding: 10px 10px;
+    
+}
+.control{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(200, 200, 239);
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out ;
+}
+.disabled{
+    color: rgba(12, 16, 41, 0.5);
+    cursor: default;
+}
+.control:not(.disabled):hover,.pageNumbers a:hover{
+    background-color: rgb(9, 9, 75);
+    color: white;
+}
